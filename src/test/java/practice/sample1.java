@@ -16,6 +16,14 @@ public class sample1 {
 		driver.findElement(By.id("userName")).sendKeys("Lekhana");
 		driver.findElement(By.id("password")).sendKeys("abc*123");
 		driver.findElement(By.id("login")).click();
+		
+		//creating new user
+		driver.findElement(By.id("newUser")).click();
+		driver.findElement(By.className("mr-sm-2 form-control")).sendKeys("abc");
+		driver.findElement(By.id("lastname")).sendKeys("xyz");
+		
+		
+		
 	}
 
 }
